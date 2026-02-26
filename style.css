@@ -1,0 +1,25 @@
+:root {
+    --nav-color: #797FFF;
+    --needs-color: #DF4545;
+    --savings-color: #6A71FF;
+    --wants-color: #76DC61;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: var(--nav-color);
+    flex: 1;
+    padding: 20px;
+}
+
+.needs-tab:h3 { 
+    background-color: var(--needs-color);
+    width: 250;
+    height: 40;
+}
+/* h3 not working */
