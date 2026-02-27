@@ -1,8 +1,10 @@
+/* body + colors*/
 :root {
     --nav-color: #797FFF;
     --needs-color: #DF4545;
     --savings-color: #6A71FF;
     --wants-color: #76DC61;
+    --background-color: #D9D9D9;
 }
 
 * {
@@ -11,15 +13,60 @@
     box-sizing: border-box;
 }
 
+/* top bar */
 h2 {
     background-color: var(--nav-color);
     flex: 1;
     padding: 20px;
 }
+/* flexbox */
+.needs-tab, .wants-tab, .savings-tab {
+    display: flex;
+} /* not sure why the h3 are not also displayed as flex, can change layout to grid later if you want */
 
-.needs-tab:h3 { 
+/* needs section */
+.needs-tab h3 { 
+    text-align: center;
     background-color: var(--needs-color);
-    width: 250;
-    height: 40;
+    border-radius: 24px;
+    border: 1px solid #000;
+    width: 250px;
+    height: 40px;
 }
-/* h3 not working */
+/* wants section */
+.wants-tab h3 { 
+    text-align: center;
+    background-color: var(--wants-color);
+    border-radius: 24px;
+    border: 1px solid #000;
+    width: 250px;
+    height: 40px;
+}
+/* savings section */
+.savings-tab h3 { 
+    text-align: center;
+    background-color: var(--savings-color);
+    border-radius: 24px;
+    border: 1px solid #000;
+    width: 250px;
+    height: 40px;
+}
+/* expenses section */
+.expenses-section {
+    width: 250px;
+    height: 450px;
+    background: var(--background-color);
+    border-radius: 24px;
+}
+.add-new {
+    width: 414px;
+    height: 136px;
+    border-radius: 24px;
+    background: var(--background-color)
+}
+.calculations-section {
+    width: 414px;
+    height: 286px;
+    border-radius: 24px;
+    background: var(--background-color)
+}
