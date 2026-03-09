@@ -90,22 +90,23 @@
             <!-- Change name of section later -->
             <section id="add-calc">
                 <section class="add-new">
-                    <div id="addbutton"></div>
-                    <p> Add Expense (Optional)</p>
+                    <article id="add-button">
+                        <button> <img src="/images/AddExpense.png"> </button>
+                        <p> Add Expense (Optional)</p>
+                        </article>
                     <form>
+                        <article id="new-expense">
                         <label for="NewExp">New Expense</label>
                         <input type="text" id="NewExp" id="NewExp" name="NewExp">
+                        </article>
                     </form>
                 </section>
                 <section class="calculations-section">
                     <form>
-                        <label for="Needs">Needs:</label>
-                        <input type="text" id="Needs" name="Needs"> <br>
-                        <label for="Wants">Wants:</label>
-                        <input type="text" id="Wants" name="Wants"> <br>
-                        <label for="Savings">Savings:</label>
-                        <input type="text" id="Savings" name="Savings">
-                        <p class="expense-total">Total:</p>
+                        <article id="needs-calculation"> <label for="needs">Needs:</label> <input type="text" id="needs-total"> </article>
+                        <article id="wants-calculation"> <label for="wants">Wants:</label> <input type="text" id="wants-total"> </article>
+                        <article id="savings-calculation"> <label for="savings">Savings:</label> <input type="text" id="savings-total"> </article>
+                        <article id="total-calculation"> <label for="total">Total:</label> <input type="text" id="total"> </article>
                     </form>
                 </section>
             </section>
