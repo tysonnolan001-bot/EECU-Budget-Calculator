@@ -1,8 +1,15 @@
-const income_input = document.getElementById("income-input");
+const expenseInput = document.getElementById("exp1");
+
+
 
 // Add listener to find the value income_input
 
-const input_value = 0;
+let needsExpenses = 0;
+let wantsExpenses = 0;
+let savingsExpenses = 0;
+let totalExpenses = 0;
+
+const input_value = expenseInput;
 
 const need_target = input_value / 2;
 const wants_target = input_value * 0.3;
