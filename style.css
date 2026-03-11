@@ -215,13 +215,13 @@ margin-left: 31px;
     margin-top: 30px;
 }
 
-#expense-total {
+.expense-total {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-#expense-total div {
+.expense-total div {
     background-color: white;
     width: 141px;
     height: 29px;
