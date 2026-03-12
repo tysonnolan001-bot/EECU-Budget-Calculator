@@ -57,15 +57,8 @@ margin-left: 31px;
     background: var(--background-color);
     border-radius: 24px;
     margin: 1rem;
+    font-size: 24px;
 } /* not sure why the h3 are not also displayed as flex, can change layout to grid later if you want */
-
-.income-tab {
-    text-align: center;
-    border-radius: 24px;
-    border: 1px solid #000;
-    width: 250px;
-    height: fit-content;
-}
 
 .form-title {
     text-align: center;
@@ -204,7 +197,8 @@ margin-left: 31px;
 }
 
 #expenses input {
-    border: none;
+    border-radius: 1px;
+    border-color: rgba(0, 0, 0, 0.34);
 }
 
 #expenses label, #expenses input {
@@ -248,3 +242,15 @@ margin-left: 31px;
     margin-left: 195px;
     font-size: xx-large;
 }
+
+.income {
+    margin-left: 625px;
+    width: 214px;
+    height: 60px;
+    border-radius: 16px;
+    background: var(--background-color);
+    text-align: center;
+    font-size: x-large;
+    margin-top: 50px;
+}
+
