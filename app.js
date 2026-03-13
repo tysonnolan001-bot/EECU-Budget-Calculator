@@ -85,8 +85,52 @@ function updateScreen() {
     totalExpenseDisplay.value = totalExpenses;
 }
 
+const myChart = new Chart(ctx, config)
+
+function pieChart() {
+   
+  
+    return {
+      type: "pie",
+      data: {
+        labels: ["Needs", "Wants", "Savings"],
+        datasets: [{ label: "Expenses", data: [needsExpenses, wantsExpenses, savingsExpenses] }]
+      },
+      options: {
+        plugins: {
+          title: { display: true, text: `Expenses`}
+        }
+      }
+    };
+  }
+
+const config = {
+    type: 'pie',
+    data: data,
+  };
+
+const data = {
+    labels: [
+      'Needs',
+      'Wants',
+      'Savings'
+    ],
+    datasets: [{
+      label: 'Expenses to Need',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
+  };
+
 //Event Listeners
 setInputEventListeners();
 
 //Initialization
 updateScreen();
+
+updateChart();

@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wise-Up Budget Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<nav>
-    <img src="images/Wise-Up Budget Calculator.png">
-</nav>
+
 
 <body>
     <main>
@@ -17,14 +16,15 @@
             <input type="text" id="add-income" name="add-income">
         </section>
         <section class="chart-section">
+            <canvas id="myChart"></canvas>
             <!-- Add chart later -->
-            <section id="chart-legend">
+            <!-- <section id="chart-legend">
                 <ul id="legend-items">
                     <li class="legend-item1">Needs</li>
                     <li class="legend-item2">Wants</li>
                     <li class="legend-item3">Savings</li>
                 </ul>
-            </section>
+            </section> -->
         </section>
         <section id="expenses">
             <section class="needs-tab">
