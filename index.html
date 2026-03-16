@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wise-Up Budget Calculator</title>
+    <nav><img src="/images/Wise-Up Budget Calculator.png" alt="title of page"></nav>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -17,6 +18,34 @@
         </section>
         <section class="chart-section">
             <canvas id="myChart"></canvas>
+            <script>
+                const ctx = document.getElementById('myChart');
+              
+                new Chart(ctx, {
+                  type: 'pie',
+                  data: {
+                    labels: ['Needs', 'Wants', 'Savings'],
+                    datasets: [{
+                      label: '# of Expenses Paid',
+                      data: [7, 4.2, 2.80],
+                      backgroundColor: [
+                        '#DF4545',
+                        '#76DC61',
+                        '#6A71FF'
+                      ],
+                      borderWidth: 1,
+                      borderColor: 'black'
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+            </script>
             <!-- Add chart later -->
             <!-- <section id="chart-legend">
                 <ul id="legend-items">

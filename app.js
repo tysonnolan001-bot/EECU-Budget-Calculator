@@ -85,8 +85,6 @@ function updateScreen() {
     totalExpenseDisplay.value = totalExpenses;
 }
 
-const myChart = new Chart(ctx, config)
-
 function pieChart() {
    
   
@@ -104,12 +102,7 @@ function pieChart() {
     };
   }
 
-const config = {
-    type: 'pie',
-    data: data,
-  };
-
-const data = {
+  const data = {
     labels: [
       'Needs',
       'Wants',
@@ -127,10 +120,19 @@ const data = {
     }]
   };
 
+const config = {
+    type: 'pie',
+    data: data,
+  };
+
+const myChart = new Chart(ctx, config);
+myChart.data.datasets[0].data[2] = 50;
+
 //Event Listeners
 setInputEventListeners();
 
 //Initialization
 updateScreen();
 
-updateChart();
+//Chart Update
+myChart.update('none');
